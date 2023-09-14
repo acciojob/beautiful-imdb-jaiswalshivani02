@@ -1,2 +1,36 @@
 
 /* Your CSS Code here. */
+/* Reset some default styles for the body and HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center-align the contents of the movie-detail div */
+.movie-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically in the viewport */
+  text-align: center;
+}
+
+/* Style for the movie poster */
+.moviePic {
+  height: 300px;
+  width: auto; /* Adjust the width proportionally based on the height */
+  opacity: 0.9; /* Adjust the opacity as desired */
+}
+
+/* Style for the movie description */
+.movieDetail {
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  transform: translateY(-50%); /* Center vertically */
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
